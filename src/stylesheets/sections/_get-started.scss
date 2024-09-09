@@ -1,5 +1,5 @@
-@use '../custom'as *;
-@use '../components/mixins'as *;
+@use "../custom" as *;
+@use "../components/mixins" as *;
 
 .get-started {
   padding: 4rem 0;
@@ -9,6 +9,7 @@
 .cta-info {
   padding: 3rem;
   margin: 1rem 0;
+  text-align: center;
 
   &__list {
     position: relative;
@@ -28,7 +29,7 @@
   }
 }
 
-// FORM CONTENT 
+// FORM CONTENT
 .form {
   padding: 3rem;
 
@@ -43,4 +44,11 @@
       text-transform: capitalize;
     }
   }
+}
+
+button:hover {
+  @include gradient;
+  box-shadow: 0 1rem 2rem rgba($black, 0.2);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

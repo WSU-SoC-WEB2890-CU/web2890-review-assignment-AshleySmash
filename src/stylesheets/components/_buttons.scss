@@ -1,5 +1,5 @@
-@use '../custom'as *;
-@use '../components/mixins'as *;
+@use "../custom" as *;
+@use "../components/mixins" as *;
 
 .btn-rounded {
   position: relative;
@@ -9,6 +9,7 @@
   border: 0.1rem solid rgba($white, 0.6);
   background-color: $white;
   display: block;
+  box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
 
   span {
     position: absolute;
@@ -25,7 +26,10 @@
       font-size: 1rem;
       line-height: 2.5rem;
     }
-
+  }
+  .btn-primary-large {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
   }
 
   &:hover {
@@ -33,7 +37,7 @@
     color: $white;
 
     span {
-      background-color: rgba($orange, 1.0);
+      background-color: rgba($orange, 1);
     }
   }
 }

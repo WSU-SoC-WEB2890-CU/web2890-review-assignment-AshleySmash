@@ -1,1 +1,31 @@
 TODO: List here all the changes you made to given template to adapt it to your needs
+
+1. Updated Play Button Functionality: Modified the play button to link directly to a YouTube video about creating a portfolio. Added target="_blank" to ensure the video opens in a new tab, 
+REASON: This allows users to easily return to the original site, and decreases frustration of buttons not working.
+
+2. Implemented Filter Functionality: Added JavaScript and CSS classes (filter-button and filter-by) to enable filtering of portfolio items by type (website, design, or mockup).
+REASON: This enhances user interaction by allowing them to sort content.
+
+3. Enhanced Form Validation: Made all fields in the "Start Your Project"/"Contact Us" form mandatory. Implemented client-side validation to show error messages for incomplete submissions and a thank you message upon successful submission.
+REASON: To help users know if there response went through and if they need to change or add anything
+
+4. Updated Testimonial Card Style: Added a shadow effect to testimonial cards.
+REASON: To increase their visual prominence and make them stand out more.
+
+5. Footer Hover Color Adjustment: Changed footer hover colors from $primary to $secondary. 
+REASON: This adjustment ensures better contrast and clarity, as the new $primary color was blending in too much.
+
+6. Enhanced Get-Started Section: Added a Call-to-Action (CTA) button with a hover effect 
+REASON: To make the section's CTA more prominent and engaging for users.
+
+7. Updated Button Styles: Modified the .btn-rounded style to include a box shadow 
+REASON: For improved visibility and a more pronounced look.
+
+8. Refined Typography for Headings: Enhanced heading styles by adding a text shadow 
+REASON: To improve readability and make headings more distinct.
+
+9. Navbar Visibility Improvement: Added a shadow effect to the navbar 
+REASON: To provide better separation from the content and enhance its visibility.
+
+10. Customized FAQ Section: Added a background color to FAQ items 
+REASON: To improve their visual separation and make them more distinct from other content.

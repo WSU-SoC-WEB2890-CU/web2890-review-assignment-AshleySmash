@@ -1,0 +1,14 @@
+@use "../custom" as *;
+
+#faq {
+  background-color: lighten($secondary, 45%);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  &hover {
+    color: $white;
+  }
+}
+
+.accordion-button:hover {
+  color: $white;
+}

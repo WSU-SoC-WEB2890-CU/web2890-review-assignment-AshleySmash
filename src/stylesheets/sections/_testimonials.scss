@@ -1,5 +1,5 @@
-@use '../custom'as *;
-@use '../components/mixins'as *;
+@use "../custom" as *;
+@use "../components/mixins" as *;
 
 .testimonials {
   position: relative;
@@ -7,6 +7,7 @@
   @include gradient;
 
   &__card {
+    box-shadow: 0 1rem 2rem rgba($black, 0.1);
     background-color: rgba($white, 0.8);
     padding: 2rem 1.25rem;
     border-radius: 0.625rem;

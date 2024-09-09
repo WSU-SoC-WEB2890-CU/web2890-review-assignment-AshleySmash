@@ -1,0 +1,112 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.process {
+  padding: 4rem 1rem;
+  background-color: $white;
+
+  .container {
+    @include media-breakpoint-up(sm) {
+      padding: 0;
+    }
+  }
+
+  .process-steps {
+    @include media-breakpoint-up(sm) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+    }
+  }
+
+  .process-step {
+    @include transitionProperty;
+    background-color: $gray-100;
+    border: 1px solid $gray-300;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem;
+    text-align: center;
+
+    .step-icon {
+      font-size: 2rem;
+      color: $primary;
+    }
+
+    .step-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-description {
+      font-size: 0.9rem;
+      color: $gray-600;
+    }
+
+    &:hover {
+      background-color: $gray-200;
+      box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .process-step {
+      .step-icon {
+        font-size: 2.5rem;
+      }
+
+      .step-title {
+        font-size: 1.2rem;
+      }
+
+      .step-description {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .process-step {
+      .step-icon {
+        font-size: 3rem;
+      }
+
+      .step-title {
+        font-size: 1.4rem;
+      }
+
+      .step-description {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .process-step {
+      .step-icon {
+        font-size: 3.5rem;
+      }
+
+      .step-title {
+        font-size: 1.6rem;
+      }
+
+      .step-description {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

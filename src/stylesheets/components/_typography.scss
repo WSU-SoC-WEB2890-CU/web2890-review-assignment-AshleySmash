@@ -1,4 +1,4 @@
-@use '../custom'as *;
+@use "../custom" as *;
 
 .display-2 {
   margin-bottom: 1rem;
@@ -18,9 +18,11 @@
     @include media-breakpoint-up(lg) {
       font-size: 1.4rem;
       display: inline-block;
-
     }
   }
+}
+.heading-line {
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba($black, 0.3);
 }
 
 .heading-line::before {
@@ -70,5 +72,9 @@
 }
 
 .gradient {
-  background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
 }
